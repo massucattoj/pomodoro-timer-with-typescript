@@ -23,36 +23,39 @@ export function NewCycleForm() {
 
   return (
     <FormContainer>
-      <label htmlFor="task">Vou trabalhar em </label>
-      <TaskInput
-        id="task"
-        list="task-suggestions"
-        placeholder="Set the name for your project"
-        disabled={!!activeCycle}
-        // onChange={(e) => setTask(e.target.value)}
-        // value={task}
-        {...register('task')}
-      />
+      <div>
+        <label htmlFor="task">Task: </label>
+        <TaskInput
+          id="task"
+          list="task-suggestions"
+          placeholder="Set a task name"
+          disabled={!!activeCycle}
+          // onChange={(e) => setTask(e.target.value)}
+          // value={task}
+          {...register('task')}
+        />
 
-      <datalist id="task-suggestions">
-        <option value="Projeto Amanhecer"></option>
-        <option value="Shadow Next"></option>
-        <option value="Lost vayne"></option>
-      </datalist>
+        <datalist id="task-suggestions">
+          <option value="Projeto Amanhecer"></option>
+          <option value="Shadow Next"></option>
+          <option value="Lost vayne"></option>
+        </datalist>
+      </div>
 
-      <label htmlFor="minutesAmount">durante</label>
-      <MinutesAmountInput
-        id="minutesAmount"
-        type="number"
-        placeholder="00"
-        step={5}
-        min={5}
-        max={60}
-        disabled={!!activeCycle}
-        {...register('minutesAmount', { valueAsNumber: true })}
-      />
-
-      <span>minutos.</span>
+      <div>
+        <label htmlFor="minutesAmount">Time:</label>
+        <MinutesAmountInput
+          id="minutesAmount"
+          type="number"
+          placeholder="00"
+          step={5}
+          min={5}
+          max={60}
+          disabled={!!activeCycle}
+          {...register('minutesAmount', { valueAsNumber: true })}
+        />
+        <span>minutes.</span>
+      </div>
     </FormContainer>
   )
 }

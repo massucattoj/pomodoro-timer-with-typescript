@@ -5,6 +5,17 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
 
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: bold;
+    color: ${(props) => props.theme['green-500']};
+  }
+
   nav {
     display: flex;
     gap: 0.5rem;
