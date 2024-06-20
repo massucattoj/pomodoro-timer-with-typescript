@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+## About the project
+![App Screenshot](./src/assets/Home.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Pomodoro Timer Application
 
-Currently, two official plugins are available:
+This Pomodoro Timer application is built using Vite, TypeScript, and Styled Components to provide a sleek, efficient, and modern productivity tool. The Pomodoro technique is a time management method that breaks work into intervals, traditionally 25 minutes in length, separated by short breaks. This application allows users to focus on tasks with timed work sessions and breaks, enhancing productivity and focus.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+To reproduce locally:
+```bash
+  cd pomodoro-timer-with-TypeScript
+  npm i
+  npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Built with
+![Vite](https://img.shields.io/badge/vite-2B2B2B?logo=vite&logoColor=FFD62E)
+![TypeScript](https://img.shields.io/badge/typescript-007ACC?logo=typescript&logoColor=white)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?logo=styled-components&logoColor=white)
