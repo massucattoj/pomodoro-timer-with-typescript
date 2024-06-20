@@ -21,6 +21,8 @@ To reproduce locally:
 - Reducers
 - Local Storage
 - Providers
+- React Hook Form
+- Zod
 - Clean Code
 
 ## Built with
